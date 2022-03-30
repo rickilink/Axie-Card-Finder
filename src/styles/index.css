@@ -5,23 +5,13 @@
     font-size: medium;
 }
 body{
+    
     background-color: #091C38;
 }
  /* ---------HEADER --------*/
 
-.Logo{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    letter-spacing: 2px;
-    cursor: pointer;
-    
-}
-.Logo:hover{
-    color: red;
-    
-    transition: 1s;
-}
- /* header nav ul li{
+
+  header nav ul li{
     list-style: none;  
     display: inline-block;   
     padding: 0px  20px;     
@@ -29,11 +19,6 @@ body{
   
  }*/
 
-/* header nav ul a {
-    color: white;     
-    text-decoration: none;
-    font-size: 15px;
-} */
 
 .Header_nav_ul_a_li::after{
     content: '';

@@ -1,6 +1,8 @@
 
 import styled from "styled-components";
 
+    import { Link } from "react-router-dom";
+
 
 export const Nav = styled.nav`
 
@@ -21,9 +23,34 @@ list-style: none;
     color: white;     
     text-decoration: none;
     font-size: 15px;
+    &:hover{
+        color:red;
+  
+
+
+
+    }
 
 
 `
+
+export const Linkys = styled(Link)`
+color:white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration:none;
+    &:hover {
+        color:red;
+        transition:.5s;
+    
+  }
+
+    
+
+`
+
+
 
 
 

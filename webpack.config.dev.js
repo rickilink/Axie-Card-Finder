@@ -22,7 +22,8 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use:{
-                    loader: 'babel-loader'
+                    loader: 'babel-loader',
+                    
                 }
             },
             {
@@ -32,21 +33,14 @@ module.exports = {
                     ]   
             },
             {
-                test: /\.s[ac]ss$/,
+                test: /\.css$/,
                 use: [ 
                     'style-loader',
                     'css-loader',
                 ]
    
             },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                  {
-                    loader: 'file-loader',
-                  },
-                ],
-              },
+            
         ]
     },
     
@@ -57,7 +51,7 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css'
-        })
+        }),
     ],
     devServer: {
         static: {

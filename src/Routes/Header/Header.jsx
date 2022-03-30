@@ -1,18 +1,16 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { Nav , Li} from "../../styles/Header.js";
+import { Nav , Linkys ,Li} from "../../styles/Header.js";
 
 export const Headers = () => {
     return(
         <Nav>
-           <h2 className="Logo">Rickilink</h2>
+           <Linkys to="/">Card Finder</Linkys>
             <ul>
-                <Link to="/cards"><Li className="Header_nav_ul_a_li">Nombre de Cartas</Li></Link>
-                <Link to="/buscador"><Li className="Header_nav_ul_a_li">Buscador</Li></Link>
-                <Link to="/partes"><Li className="Header_nav_ul_a_li">Imagenes de Cartas</Li></Link>
-                <Link to="/Mouth"><Li className="Header_nav_ul_a_li">Cuatro</Li></Link>
-                <Link to="#"><Li className="Header_nav_ul_a_li">Cinco</Li></Link>
-                <Link to="#"><Li className="Header_nav_ul_a_li">Seis</Li></Link>
+                <Link to="/cards"><Li >Nombre de Cartas</Li></Link>
+                <Link to="/buscador"><Li >Buscador</Li></Link>
+                <Link to="/partes"><Li >Imagenes de Cartas</Li></Link>
+               
             </ul>
         </Nav>
 )
