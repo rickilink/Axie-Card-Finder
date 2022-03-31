@@ -4,6 +4,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require ('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest')
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
+
+
 
 module.exports = {
     entry: './src/index.js',
@@ -51,6 +55,37 @@ module.exports = {
         new MiniCssExtractPlugin({
                 filename: '[name].css'
          }),
+         new WebpackPwaManifest({
+            name:'Axie Cards Origin',
+            shortname: 'Axie Cards',
+            description: 'It is an app when you can find the new axie infinity cards Origin',
+            background_color: '#091C38',
+            theme_color: '#091C38',
+            icons: [
+                {
+                    src: path.resolve('src/assets/icon.png'),
+                    sizes:[ 96 ,128 ,192 ,256, 384, 512]
+                }
+            ]
+        }),
+        new WorkboxWebpackPlugin.GenerateSW({
+            runtimeCaching:[
+                {
+                    urlPattern:  new RegExp('https://(res.cloudinary.com|images.unsplash.com)'),
+                    handler: 'CacheFirst',
+                    options: {
+                        cacheName:'images'
+                    }
+                },
+                {
+                    urlPattern:  new RegExp('https://(res.cloudinary.com|images.unsplash.com)'),
+                    handler: 'NetworkFirst',
+                    options: {
+                        cacheName:'api'
+                    }
+                }
+            ]
+        }),
          new CleanWebpackPlugin(),
 
    ],

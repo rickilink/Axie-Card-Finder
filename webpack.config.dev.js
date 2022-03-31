@@ -52,6 +52,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: '[name].css'
         }),
+        
     ],
     devServer: {
         static: {

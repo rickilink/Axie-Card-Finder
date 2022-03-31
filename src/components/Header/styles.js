@@ -25,8 +25,7 @@ list-style: none;
     font-size: 15px;
     &:hover{
         color:red;
-  
-
+   
 
 
     }

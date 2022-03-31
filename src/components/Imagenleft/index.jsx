@@ -5,7 +5,7 @@ import { LerfterImage } from "../../sources/GetElements/Axie_parts";
 export const LefterImage = () => {  
     return( 
        
-        <Img src={LerfterImage}>
+        <Img src={LerfterImage} alt="Image">
             
         </Img>
          

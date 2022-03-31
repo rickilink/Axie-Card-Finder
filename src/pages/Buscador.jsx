@@ -7,7 +7,7 @@ import { LefterImage } from '../components/Imagenleft'
 
 import {Ears  , Tail , Mouth , Back, Horn , Eyes}  from '../sources/GetElements/Axie_parts'
 
-export function Buscador() {
+ function Buscador() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
   const [selectedOption3, setSelectedOption3] = useState(null);
@@ -140,4 +140,4 @@ if(a){
 
 
 
-    
+export default Buscador

@@ -1,0 +1,43 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.5a7b33ab68207897da3b915c95d28b41.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.791c9cf10e9901f13666345093f1f87a.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.dbcb88e34ed4b9e4d5849a5c8b163453.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.aaa46b2b6fe16c57ecb8a693565d04fa.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.8a7f359763f8e82cdcebf5958a587e22.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.716f671009fcc19028b0aa9e3c0aec11.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Axie Cards Origin",
+  "short_name": "Axie Cards Origin",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "shortname": "Axie Cards",
+  "description": "It is an app when you can find the new axie infinity cards Origin",
+  "background_color": "#091C38",
+  "theme_color": "#091C38"
+}
